@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Ingeniero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/favicon.png" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Portafolio profesional de Ingeniería" />
+</head>
+<body>
+    <!-- Elementos fijos: logo izquierda, nav flotante centrado, toggle derecha -->
+    <!-- Logo fijo -->
+            <a href="#inicio" class="fixed-logo" aria-label="Logo">
+            <img src="assets/logo-word.png" alt="Logo" />
+            </a>
+
+            <!-- Botón de modo oscuro fijo -->
+            <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema claro/oscuro" title="Modo claro/oscuro">
+            <span class="icon-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V2M12 22v-2M4 12H2m20 0h-2M5 5L3.6 3.6M20.4 20.4L19 19M5 19l-1.4 1.4M20.4 3.6L19 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <span class="icon-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </span>
+            </button>
+
+            <!-- Aquí sigue tu menú de navegación -->
+            <nav class="floating-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li><a class="nav-link" href="#formacion">Formación</a></li>
+                <li><a class="nav-link" href="#cursos">Logros</a></li>
+                <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                <li><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            </ul>
+            </nav>
+
+    <main>
+        <!-- Hero / Presentación -->
+        <section id="inicio" class="section hero-section container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="person-thumb">
+                        <!-- Reemplaza la ruta por tu imagen PNG -->
+                        <img src="assets/profile.png" alt="Foto de perfil" />
+                    </div>
+                    <h1 class="hero-title">Hola, soy Ricardo Salazar</h1>
+                    <p class="hero-subtitle">
+                        +2 años de experiencia.
+                        <span style="color:#00aaffd3; font-weight:bold;">
+                            Ingeniero en Ciberseguridad e Informático
+                        </span>
+                        Apasionado por la Tecnología y en constante evolución profesional.
+                        </p>
+                        <div class="hero-actions">
+                        <a class="btn btn-outline" href="https://www.linkedin.com/in/ficticio" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9H9V19H6V9Z" fill="currentColor"/><path d="M7.5 5C6.67157 5 6 5.67157 6 6.5C6 7.32843 6.67157 8 7.5 8C8.32843 8 9 7.32843 9 6.5C9 5.67157 8.32843 5 7.5 5Z" fill="currentColor"/><path d="M10.5 9H13.5V10.5C14.0835 9.5835 15.1665 9 16.5 9C19.0376 9 20 10.5 20 13V19H17V13.75C17 12.5 16.5 12 15.75 12C15 12 14.5 12.5 14.5 13.75V19H11.5L11.5 9H10.5Z" fill="currentColor"/></svg></span>
+                            LinkedIn
+                        </a>
+                        <a class="btn btn-outline" href="https://github.com/ricyber" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.486 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.343-3.369-1.343-.455-1.159-1.11-1.468-1.11-1.468-.907-.62.069-.607.069-.607 1.003.071 1.53 1.038 1.53 1.038.892 1.537 2.341 1.093 2.91.836.091-.653.35-1.093.636-1.345-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.7 1.028 1.595 1.028 2.688 0 3.846-2.338 4.695-4.566 4.944.359.31.678.92.678 1.854 0 1.337-.012 2.417-.012 2.746 0 .27.18.582.688.483C19.138 20.202 22 16.447 22 12.02 22 6.486 17.522 2 12 2Z" fill="currentColor"/></svg></span>
+                            GitHub
+                        </a>
+                        <a class="btn btn-primary" href="assets/CV.pdf" download>
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="terminal" aria-label="Terminal de información">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">Ri@Cyber:~$</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre id="terminalOutput" class="terminal-output"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia -->
+        <section id="experiencia" class="section container">
+            <header class="section-header">
+                <span class="section-icon" aria-hidden="true">
+                    <!-- Icono SVG sección -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="2"/><path d="M4 9H20" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h2 class="section-title">Experiencia</h2>
+            </header>
+
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Ingeniero en Ciberseguridad</h3>
+                        <p class="item-subtitle">TW Logistics · 2023 — 2024</p>
+                        <p class="item-desc">Diseñé e implementé estrategias de seguridad digital, garantizando la protección de redes y datos frente a amenazas internas y externas.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Analista de Informática</h3>
+                        <p class="item-subtitle">PC Factory · 2017 — 2018</p>
+                        <p class="item-desc">Encargado de la gestión y mantenimiento de sistemas, asegurando la disponibilidad de infraestructura tecnológica y soporte a usuarios.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Soporte Informatico</h3>
+                        <p class="item-subtitle">Falabella · 2015</p>
+                        <p class="item-desc">Brindé asistencia técnica en hardware y software, resolviendo incidencias y optimizando el rendimiento de equipos y redes.</p>
+                    </div>
+                </li>
+                <!-- Para agregar más experiencias duplica <li class="timeline-item"> ... </li> -->
+            </ol>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="section container">
+            <header class="section-header">
+                <span class="section-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7H21V17H3V7Z" stroke="currentColor" stroke-width="2"/><path d="M7 7V5H17V7" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h2 class="section-title">Proyectos</h2>
+            </header>
+
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/projects/p1.png" alt="Proyecto 1" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Cyber-Earth</h3>
+                        <p class="project-desc">Un visualizador web interactiva para explorar datos sobre cibersataques y seguridad informatica en diferentes paises, y comprender la importancia en la ciberseguridad en la actualidad.</p>
+                        <ul class="project-techs">
+                            <li>GSAP</li><li>JavaScript</li><li>Three.js</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn btn-outline" href="https://ricyber.github.io/Cyber-Earth/" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7L8 5Z" fill="currentColor"/></svg></span>
+                            Demo
+                        </a>
+                        <a class="btn btn-outline" href="https://github.com/ricyber/Cyber-Earth" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.486 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.343-3.369-1.343-.455-1.159-1.11-1.468-1.11-1.468-.907-.62.069-.607.069-.607 1.003.071 1.53 1.038 1.53 1.038.892 1.537 2.341 1.093 2.91.836.091-.653.35-1.093.636-1.345-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.7 1.028 1.595 1.028 2.688 0 3.846-2.338 4.695-4.566 4.944.359.31.678.92.678 1.854 0 1.337-.012 2.417-.012 2.746 0 .27.18.582.688.483C19.138 20.202 22 16.447 22 12.02 22 6.486 17.522 2 12 2Z" fill="currentColor"/></svg></span>
+                            Código
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/projects/Network.png" alt="Proyecto 2" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Netword-Recon-Ri&Cyber</h3>
+                        <p class="project-desc">Una herramienta de linea de comandos para reconocmientos de redes, para descubrir hosts, identificar puertos abiertos, detectar servicios activos y mostrar información de manera ordenada.</p>
+                        <ul class="project-techs">
+                            <li>Go</li><li>Shell</li><li>Makefile</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn btn-outline" href="#" 
+                            onclick="openCertModal('assets/projects/Network.png'); return false;">
+                            <span class="icon" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            Demo
+                            </a>
+                        <a class="btn btn-outline" href="https://github.com/ricyber/Netword-Recon-Ri-Cyber" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.486 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.343-3.369-1.343-.455-1.159-1.11-1.468-1.11-1.468-.907-.62.069-.607.069-.607 1.003.071 1.53 1.038 1.53 1.038.892 1.537 2.341 1.093 2.91.836.091-.653.35-1.093.636-1.345-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.7 1.028 1.595 1.028 2.688 0 3.846-2.338 4.695-4.566 4.944.359.31.678.92.678 1.854 0 1.337-.012 2.417-.012 2.746 0 .27.18.582.688.483C19.138 20.202 22 16.447 22 12.02 22 6.486 17.522 2 12 2Z" fill="currentColor"/></svg></span>
+                            Código
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/projects/p3.png" alt="Proyecto 3" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">App IoT</h3>
+                        <p class="project-desc">Monitoreo de sensores, alertas y mapas en vivo.</p>
+                        <ul class="project-techs">
+                            <li>Flutter</li><li>MQTT</li><li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7L8 5Z" fill="currentColor"/></svg></span>
+                            Demo
+                        </a>
+                        <a class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.486 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.343-3.369-1.343-.455-1.159-1.11-1.468-1.11-1.468-.907-.62.069-.607.069-.607 1.003.071 1.53 1.038 1.53 1.038.892 1.537 2.341 1.093 2.91.836.091-.653.35-1.093.636-1.345-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.7 1.028 1.595 1.028 2.688 0 3.846-2.338 4.695-4.566 4.944.359.31.678.92.678 1.854 0 1.337-.012 2.417-.012 2.746 0 .27.18.582.688.483C19.138 20.202 22 16.447 22 12.02 22 6.486 17.522 2 12 2Z" fill="currentColor"/></svg></span>
+                            Código
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/projects/Herramienta-2.png" alt="Proyecto 4" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Word-Audit-ricyber</h3>
+                        <p class="project-desc">Una herramienta de auditoria de contraseñas para analizar la fortaleza de contraseñas, verificar si cumplen politicas minimas de seguridad y detectar contraseñas debiles en entornos controlados.</p>
+                        <ul class="project-techs">
+                            <li>Go</li><li>Shell</li><li>Makefile</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn btn-outline" href="https://github.com/ricyber/Password-Audit-ricyber" 
+                            onclick="openCertModal('assets/projects/Herramienta-2.png'); return false;">
+                            <span class="icon" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7L8 5Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            Demo
+                            </a>
+                        <a class="btn btn-outline" href="https://github.com/ricyber/Password-Audit-ricyber" target="_blank" rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.486 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.343-3.369-1.343-.455-1.159-1.11-1.468-1.11-1.468-.907-.62.069-.607.069-.607 1.003.071 1.53 1.038 1.53 1.038.892 1.537 2.341 1.093 2.91.836.091-.653.35-1.093.636-1.345-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.7 1.028 1.595 1.028 2.688 0 3.846-2.338 4.695-4.566 4.944.359.31.678.92.678 1.854 0 1.337-.012 2.417-.012 2.746 0 .27.18.582.688.483C19.138 20.202 22 16.447 22 12.02 22 6.486 17.522 2 12 2Z" fill="currentColor"/></svg></span>
+                            Código
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Para agregar más proyectos, duplica <article class="project-card"> ... </article> -->
+            </div>
+        </section>
+
+        <!-- Formación -->
+        <section id="formacion" class="section container">
+            <header class="section-header">
+                <span class="section-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 6L20 10L12 14L4 10Z" stroke="currentColor" stroke-width="2"/><path d="M6 12V17C6 17 8 19 12 19C16 19 18 17 18 17V12" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h2 class="section-title">Formación</h2>
+            </header>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Ingeniería en Ciberseguridad</h3>
+                        <p class="item-subtitle">Instituto Profesional Aiep · 2019 — 2023</p>
+                        <p class="item-desc">Formación enfocada en la protección de sistemas, redes y aplicaciones, con énfasis en prevención, detección y respuesta a incidentes.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Técnico en Informática</h3>
+                        <p class="item-subtitle">Instituto Profesional de Chile · IPCHILE 2016 — 2017</p>
+                        <p class="item-desc">Especialización en instalación, configuración y soporte de equipos, redes y software para entornos corporativos y personales.</p>
+                    </div>
+                </li>
+               <!--  <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Colegio Esjelavi</h3>
+                        <p class="item-subtitle">Universidad Metropolitana · 2014 — 2019</p>
+                        <p class="item-desc">Formación académica general con bases en ciencias, matemáticas y tecnología, que despertó mi interés por el área informática.</p>
+                    </div>
+                </li>-->
+                <!-- Para agregar más formaciones duplica <li class="timeline-item"> ... </li> -->
+            </ol>
+        </section>
+
+        <!-- Cursos y Certificaciones -->
+        <section id="cursos" class="section container">
+            <header class="section-header">
+                <span class="section-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/><path d="M9 9L15 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 13L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <h2 class="section-title">Cursos y Certificaciones</h2>
+            </header>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">CEH (Certified Ethical Hacker) - Preparando el examen CEH</h3>
+                        <p class="item-subtitle">Udemy · 2024</p>
+                        <p class="item-desc">Al realizar este curso, he podido comprender los fundamentos del hacking ético y la seguridad ofensiva.
+Me ha permitido aprender a identificar vulnerabilidades en sistemas y redes de manera controlada.
+He reforzado mis habilidades en reconocimiento, escaneo y explotación de fallas de seguridad.
+El enfoque práctico del curso me ayudó a prepararme para enfrentar escenarios de ciberataques.
+Gracias a esta formación, he ganado confianza en aplicar metodologías de seguridad.
+Me ha brindado las bases necesarias para avanzar hacia la certificación CEH oficial.</p>
+                        <div class="timeline-actions">
+                            <a class="btn btn-outline" href="#"
+                                onclick="openCertModal('Certificados/Ethical Hacker CEH.jpg'); return false;"
+                                rel="noopener noreferrer">
+                                    <span class="icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.5 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V7.5L14.5 2Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 13H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 17H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 9H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    Ver certificado
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Curso Completo de Seguridad Defensiva</h3>
+                        <p class="item-subtitle">Udemy · 2024</p>
+                        <p class="item-desc">Al realizar este curso, pude profundizar en la protección y defensa de sistemas informáticos.
+Aprendí a implementar estrategias de monitoreo, detección de amenazas y gestión de incidentes.
+Me permitió entender cómo funcionan firewalls, IDS/IPS y otras herramientas de seguridad.
+Desarrollé habilidades prácticas para prevenir, identificar y responder a ataques de forma eficiente.
+Este curso me ha ayudado a fortalecer mis capacidades defensivas en entornos de TI, aplicando medidas de seguridad y asegurando la integridad de la información.</p>
+                        <div class="timeline-actions">
+                            <a class="btn btn-outline" href="#"
+                                onclick="openCertModal('Certificados/Curso Completo de seguridad Defensiva.jpg'); return false;"
+                                rel="noopener noreferrer">
+                                    <span class="icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.5 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V7.5L14.5 2Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 13H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 17H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 9H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    Ver certificado
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Diplomado en Seguridad Informatica Ágil</h3>
+                        <p class="item-subtitle">Diploma Instituto de Ciberdefensa · 2022</p>
+                        <p class="item-desc">Al realizar este diplomado, pude adquirir conocimientos en gestión de ciberseguridad corporativa.
+Me permitió entender la importancia del análisis de riesgos y la implementación de políticas de seguridad, aprendiendo a aplicar metodologías ágiles para la administración y mejora continua de procesos de seguridad.
+Me brindó herramientas prácticas para diseñar defensas efectivas y responder ante incidentes críticos.
+Gracias a este programa, desarrollé una visión estratégica de la ciberseguridad en organizaciones.
+Ahora puedo combinar la teoría con la práctica para mejorar la protección de los sistemas.</p>
+                        <div class="timeline-actions">
+                            <a class="btn btn-outline" href="#"
+                                onclick="openCertModal('Certificados/Diploma Instituto de ciberdefensa.png'); return false;"
+                                rel="noopener noreferrer">
+                                    <span class="icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.5 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V7.5L14.5 2Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 13H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 17H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 9H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    Ver certificado
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">Curso de Hacking Etico y Ciberseguridad</h3>
+                        <p class="item-subtitle">Udemy · 2022</p>
+                        <p class="item-desc">Al realizar este curso, he desarrollado habilidades en pruebas de intrusión y evaluación de vulnerabilidades.
+Me permitió aprender técnicas de pentesting y seguridad ofensiva en diferentes entornos.
+Aprendí a detectar fallas en aplicaciones web, redes y sistemas mediante metodologías profesionales.
+Este curso fortaleció mi capacidad de análisis y resolución de problemas de seguridad.
+Me brindó conocimientos prácticos para aplicar técnicas de defensa y contraataque efectivas.
+Permitiendo enfrentar retos de ciberseguridad de forma más estratégica y profesional.</p>
+                        <div class="timeline-actions">
+                            <a class="btn btn-outline" href="#"
+                                onclick="openCertModal('Certificados/hacking etico y ciberseguridad avanzado.jpg'); return false;"
+                                rel="noopener noreferrer">
+                                    <span class="icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.5 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V7.5L14.5 2Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 13H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 17H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 9H8" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    Ver certificado
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                </!-- -->
+                <!--
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title">JavaScript Avanzado</h3>
+                        <p class="item-subtitle">Platzi · 2022</p>
+                        <p class="item-desc">Programación asíncrona, ES6+, manipulación del DOM, frameworks modernos y desarrollo de aplicaciones web interactivas.</p>
+                        <div class="timeline-actions">
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+                                <span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V7.5L14.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                                Ver certificado
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                -->
+                <!-- Para agregar más cursos duplica <li class="timeline-item"> ... </li> -->
+            </ol>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="section container">
+            <header class="section-header">
+                <span class="section-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h2 class="section-title">Habilidades</h2>
+            </header>
+            
+            <!-- Terminal de Habilidades -->
+            <div class="skills-terminal" aria-label="Terminal de habilidades técnicas">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">Ri@Cyber:~$ skills --list</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/nmap.png" alt="nmap" width="40" height="40" /></span>
+                            <span class="skill-name">Nmap</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/burp_suite.png" alt="BurpSuite" width="40" height="40" /></span>
+                            <span class="skill-name">BurpSuite</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/metasploit.png" alt="metasploit" width="40" height="40" /></span>
+                            <span class="skill-name">Metasploit</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/wireshark.png" alt="wireshark" width="40" height="40" /></span>
+                            <span class="skill-name">Wireshark</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/kali linux.png" alt="kali linux" width="40" height="40" /></span>
+                            <span class="skill-name">Kali Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/nessus.png" alt="nessus" width="40" height="40" /></span>
+                            <span class="skill-name">Nessus</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/owasp_zap.png" alt="owasp_zap" width="40" height="40" /></span>
+                            <span class="skill-name">Owasp Zap</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/nikto.png" alt="nikto" width="40" height="40" /></span>
+                            <span class="skill-name">Nikto</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/Go.png" alt="Go" width="40" height="40" /></span>
+                            <span class="skill-name">Go</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/javascript.png" alt="javascript" width="40" height="40" /></span>
+                            <span class="skill-name">Javascript</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/postgresql.png" alt="postgresql" width="40" height="40" /></span>
+                            <span class="skill-name">Postgresql</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/docker.png" alt="docker" width="40" height="40" /></span>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/python.png" alt="python" width="40" height="40" /></span>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon"><img src="assets/skills/fortinet.png" alt="Fortinet" width="40" height="40" /></span>
+                            <span class="skill-name">Fortinet</span>
+                        </div>
+                        <!-- Para agregar más habilidades, duplica el div.skill-item de arriba -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="section container">
+            <header class="section-header">
+                <span class="section-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2"/><path d="M4 22C4 18.134 7.13401 15 11 15H13C16.866 15 20 18.134 20 22" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <h2 class="section-title">Sobre mí</h2>
+            </header>
+            <div class="about-content">
+                <div class="about-text">
+                    <p> 
+                        Soy ingeniero en ciberseguridad con especialización en informática, un camino que me ha permitido integrar una base técnica sólida con un enfoque en la protección de sistemas y datos.
+                        <span style="color:#00aaff; font-weight:bold;">
+                            Me motiva entender cómo funcionan los sistemas para poder protegerlos y mejorarlos,
+                        </span>
+                        llevandome a desarrollar una visión orientada a la seguridad, entendiendo la importancia de crear soluciones confiables frente a los desafíos actuales en el ámbito tecnológico.
+                        </p>
+
+                        <br>
+
+                        <p>
+                        Me apasiona aprender y mantenerme actualizado en un área que evoluciona constantemente como la ciberseguridad.
+                        <span style="color:#00aaff; font-weight:bold;">
+                            Actualmente estoy enfocándome en fortalecer mis capacidades en desarrollo backend, análisis de datos y herramientas de seguridad ofensiva,
+                        </span>
+                        buscando crecer como profesional y aportar soluciones que marquen una diferencia en entornos tecnológicos exigentes.
+                        </p>
+                    <p>
+                </div>
+                <div class="about-image">
+                    <!-- Para colocar tu imagen PNG, reemplaza la ruta de abajo -->
+                    <img src="assets/about.png" alt="Sobre mí" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <small>© <span id="year"></span> Ricardo Salazar | Ingeniero en Ciberserguridad</small>
+            </div>
+            <div class="footer-right">
+                <!-- Íconos SVG de redes -->
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9H9V19H6V9Z" fill="currentColor"/><path d="M7.5 5C6.67157 5 6 5.67157 6 6.5C6 7.32843 6.67157 8 7.5 8C8.32843 8 9 7.32843 9 6.5C9 5.67157 8.32843 5 7.5 5Z" fill="currentColor"/><path d="M10.5 9H13.5V10.5C14.0835 9.5835 15.1665 9 16.5 9C19.0376 9 20 10.5 20 13V19H17V13.75C17 12.5 16.5 12 15.75 12C15 12 14.5 12.5 14.5 13.75V19H11.5L11.5 9H10.5Z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://github.com/ricyber" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.486 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.343-3.369-1.343-.455-1.159-1.11-1.468-1.11-1.468-.907-.62.069-.607.069-.607 1.003.071 1.53 1.038 1.53 1.038.892 1.537 2.341 1.093 2.91.836.091-.653.35-1.093.636-1.345-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.7 1.028 1.595 1.028 2.688 0 3.846-2.338 4.695-4.566 4.944.359.31.678.92.678 1.854 0 1.337-.012 2.417-.012 2.746 0 .27.18.582.688.483C19.138 20.202 22 16.447 22 12.02 22 6.486 17.522 2 12 2Z" fill="currentColor"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-AFUX3mD9gCnyjVgMf0VkwJgj8qz4S4pHplHEp2M2Xz3C2G7K3FzJm2SbVqWHTcYf2wzjQvC8W3p9j3Bqg9CczA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-Cz0v0Zy5K7qS1yJiF0lqk/kKkXk6H6kT9n7vCwS3a1m3M+7m9X6a4y4+Qp5qk9Wn9QZ2mQ6wz5d1sQqgq3oW5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Modal global para certificados -->
+<div id="certModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <button id="certModalClose" class="modal-close" aria-label="Cerrar certificado">&times;</button>
+  <img id="certModalImage" class="modal-image" alt="">
+</div>
+
+<script>
+/* Funciones seguras y pequeñas para abrir/cerrar modal */
+function openCertModal(src, alt='Certificado') { const modal = document.getElementById('certModal'); const img = document.getElementById('certModalImage'); if(!modal || !img) return; img.src = src; img.alt = alt; modal.classList.add('show'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow = 'hidden'; }
+function closeCertModal() { const modal = document.getElementById('certModal'); const img = document.getElementById('certModalImage'); if(!modal || !img) return; modal.classList.remove('show'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; setTimeout(()=>{ img.src = ''; img.alt = ''; }, 200); }
+/* Listeners seguros — se añaden cuando DOM esté listo */
+document.addEventListener('DOMContentLoaded', ()=>{ const modal = document.getElementById('certModal'); if(!modal) return; document.getElementById('certModalClose').addEventListener('click', closeCertModal); modal.addEventListener('click', e => { if(e.target === modal) closeCertModal(); }); document.addEventListener('keydown', e => { if(e.key === 'Escape') closeCertModal(); }); });
+</script>
+
+
+</body>
+</html>
+
+
